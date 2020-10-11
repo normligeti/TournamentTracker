@@ -86,7 +86,7 @@
             this.roundDropDown.Location = new System.Drawing.Point(110, 80);
             this.roundDropDown.Name = "roundDropDown";
             this.roundDropDown.Size = new System.Drawing.Size(278, 38);
-            this.roundDropDown.TabIndex = 3;
+            this.roundDropDown.TabIndex = 0;
             this.roundDropDown.SelectedIndexChanged += new System.EventHandler(this.roundDropDown_SelectedIndexChanged);
             // 
             // unplayedOnlyCheckbox
@@ -98,7 +98,7 @@
             this.unplayedOnlyCheckbox.Location = new System.Drawing.Point(110, 124);
             this.unplayedOnlyCheckbox.Name = "unplayedOnlyCheckbox";
             this.unplayedOnlyCheckbox.Size = new System.Drawing.Size(199, 41);
-            this.unplayedOnlyCheckbox.TabIndex = 4;
+            this.unplayedOnlyCheckbox.TabIndex = 1;
             this.unplayedOnlyCheckbox.Text = "Unplayed Only";
             this.unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
             this.unplayedOnlyCheckbox.CheckedChanged += new System.EventHandler(this.unplayedOnlyCheckbox_CheckedChanged);
@@ -111,7 +111,7 @@
             this.matchupListBox.Location = new System.Drawing.Point(21, 186);
             this.matchupListBox.Name = "matchupListBox";
             this.matchupListBox.Size = new System.Drawing.Size(367, 212);
-            this.matchupListBox.TabIndex = 5;
+            this.matchupListBox.TabIndex = 2;
             // 
             // teamOneName
             // 
@@ -141,14 +141,14 @@
             this.teamOneScoreValue.Location = new System.Drawing.Point(523, 217);
             this.teamOneScoreValue.Name = "teamOneScoreValue";
             this.teamOneScoreValue.Size = new System.Drawing.Size(100, 35);
-            this.teamOneScoreValue.TabIndex = 8;
+            this.teamOneScoreValue.TabIndex = 3;
             // 
             // teamTwoScoreValue
             // 
             this.teamTwoScoreValue.Location = new System.Drawing.Point(523, 368);
             this.teamTwoScoreValue.Name = "teamTwoScoreValue";
             this.teamTwoScoreValue.Size = new System.Drawing.Size(100, 35);
-            this.teamTwoScoreValue.TabIndex = 11;
+            this.teamTwoScoreValue.TabIndex = 4;
             // 
             // teamTwoScoreLabel
             // 
@@ -195,7 +195,7 @@
             this.scoreButton.Location = new System.Drawing.Point(654, 279);
             this.scoreButton.Name = "scoreButton";
             this.scoreButton.Size = new System.Drawing.Size(109, 61);
-            this.scoreButton.TabIndex = 13;
+            this.scoreButton.TabIndex = 5;
             this.scoreButton.Text = "Score";
             this.scoreButton.UseVisualStyleBackColor = true;
             // 

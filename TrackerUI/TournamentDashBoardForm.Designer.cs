@@ -47,7 +47,7 @@
             this.createTournamentButton.Location = new System.Drawing.Point(172, 234);
             this.createTournamentButton.Name = "createTournamentButton";
             this.createTournamentButton.Size = new System.Drawing.Size(327, 66);
-            this.createTournamentButton.TabIndex = 39;
+            this.createTournamentButton.TabIndex = 2;
             this.createTournamentButton.Text = "Create Tournament";
             this.createTournamentButton.UseVisualStyleBackColor = true;
             this.createTournamentButton.Click += new System.EventHandler(this.createTournamentButton_Click);
@@ -64,7 +64,7 @@
             this.loadTournamentButton.Location = new System.Drawing.Point(172, 167);
             this.loadTournamentButton.Name = "loadTournamentButton";
             this.loadTournamentButton.Size = new System.Drawing.Size(327, 47);
-            this.loadTournamentButton.TabIndex = 38;
+            this.loadTournamentButton.TabIndex = 1;
             this.loadTournamentButton.Text = "Load Tournament";
             this.loadTournamentButton.UseVisualStyleBackColor = true;
             // 
@@ -87,7 +87,7 @@
             this.selectTournamentDropBox.Location = new System.Drawing.Point(172, 112);
             this.selectTournamentDropBox.Name = "selectTournamentDropBox";
             this.selectTournamentDropBox.Size = new System.Drawing.Size(327, 38);
-            this.selectTournamentDropBox.TabIndex = 36;
+            this.selectTournamentDropBox.TabIndex = 0;
             // 
             // tournamentDashboardLabel
             // 
