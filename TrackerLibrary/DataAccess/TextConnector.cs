@@ -39,7 +39,6 @@ namespace TrackerLibrary.DataAccess
             return model;
         }
 
-
         /// <summary>
         /// Saves a new prize to a text file.
         /// </summary>
@@ -93,6 +92,16 @@ namespace TrackerLibrary.DataAccess
         public List<PersonModel> GetPerson_All()
         {
             return PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels();
+        }
+
+        //public List<PrizeModel> GetPrize_All()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public List<TeamModel> GetTeam_All()
+        {
+            return TeamFile.FullFilePath().LoadFile().ConvertToTeamModels(PeopleFile);
         }
     }
 }
