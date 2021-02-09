@@ -54,19 +54,17 @@
             this.headerLabel.Size = new System.Drawing.Size(220, 50);
             this.headerLabel.TabIndex = 0;
             this.headerLabel.Text = "Tournament:";
-            this.headerLabel.Click += new System.EventHandler(this.headerLabel_Click);
             // 
             // tournamentName
             // 
             this.tournamentName.AutoSize = true;
             this.tournamentName.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tournamentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.tournamentName.Location = new System.Drawing.Point(238, 9);
+            this.tournamentName.Location = new System.Drawing.Point(217, 9);
             this.tournamentName.Name = "tournamentName";
             this.tournamentName.Size = new System.Drawing.Size(150, 50);
             this.tournamentName.TabIndex = 1;
             this.tournamentName.Text = "<none>";
-            this.tournamentName.Click += new System.EventHandler(this.tournamentName_Click);
             // 
             // roundLabel
             // 
@@ -78,7 +76,6 @@
             this.roundLabel.Size = new System.Drawing.Size(90, 37);
             this.roundLabel.TabIndex = 2;
             this.roundLabel.Text = "Round";
-            this.roundLabel.Click += new System.EventHandler(this.roundLabel_Click);
             // 
             // roundDropDown
             // 
@@ -112,6 +109,7 @@
             this.matchupListBox.Name = "matchupListBox";
             this.matchupListBox.Size = new System.Drawing.Size(367, 212);
             this.matchupListBox.TabIndex = 2;
+            this.matchupListBox.SelectedIndexChanged += new System.EventHandler(this.matchupListBox_SelectedIndexChanged);
             // 
             // teamOneName
             // 
@@ -134,7 +132,6 @@
             this.teamOneScoreLabel.Size = new System.Drawing.Size(80, 37);
             this.teamOneScoreLabel.TabIndex = 7;
             this.teamOneScoreLabel.Text = "Score";
-            this.teamOneScoreLabel.Click += new System.EventHandler(this.teamOneScoreLabel_Click);
             // 
             // teamOneScoreValue
             // 
@@ -182,7 +179,6 @@
             this.versusLabel.Size = new System.Drawing.Size(68, 37);
             this.versusLabel.TabIndex = 12;
             this.versusLabel.Text = "-VS-";
-            this.versusLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // scoreButton
             // 
@@ -198,6 +194,7 @@
             this.scoreButton.TabIndex = 5;
             this.scoreButton.Text = "Score";
             this.scoreButton.UseVisualStyleBackColor = true;
+            this.scoreButton.Click += new System.EventHandler(this.scoreButton_Click);
             // 
             // TournamentViewerForm
             // 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary.Model
+namespace TrackerLibrary.Models
 {
 
     /// <summary>
@@ -18,6 +18,11 @@ namespace TrackerLibrary.Model
         public int Id { get; set; }
 
         /// <summary>
+        /// The unique identifier for the team.
+        /// </summary>
+        public int TeamCompetingId { get; set; }
+
+        /// <summary>
         /// represents one team in the matchup
         /// </summary>
         public TeamModel TeamCompeting { get; set; }
@@ -26,6 +31,11 @@ namespace TrackerLibrary.Model
         /// represents the score for this particular team
         /// </summary>
         public double Score { get; set; }
+
+        /// <summary>
+        /// The unique identifier for the parent matchup (team).
+        /// </summary>
+        public int ParentMatchupId { get; set; }
 
         /// <summary>
         /// represents the matchup that this team came from as the winner
