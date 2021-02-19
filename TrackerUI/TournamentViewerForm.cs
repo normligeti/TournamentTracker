@@ -98,6 +98,11 @@ namespace TrackerUI
 
             teamOneName.Visible = isVisible;
             teamOneScoreLabel.Visible = isVisible;
+
+            if (teamTwoName.Text == "<bye>")
+            {
+                teamOneScoreValue.Enabled = false;
+            }
             teamOneScoreValue.Visible = isVisible;
             teamTwoName.Visible = isVisible;
             teamTwoScoreLabel.Visible = isVisible;
@@ -116,9 +121,11 @@ namespace TrackerUI
                     {
                         teamOneName.Text = m.Entries[0].TeamCompeting.TeamName;
                         teamOneScoreValue.Text = m.Entries[0].Score.ToString();
+                        teamOneScoreValue.Enabled = false;
 
                         teamTwoName.Text = "<bye>";
                         teamTwoScoreValue.Text = "0";
+                        teamTwoScoreValue.Enabled = false;
                     }
                     else
                     {
@@ -133,6 +140,8 @@ namespace TrackerUI
                     {
                         teamTwoName.Text = m.Entries[1].TeamCompeting.TeamName;
                         teamTwoScoreValue.Text = m.Entries[1].Score.ToString();
+                        teamOneScoreValue.Enabled = true;
+                        teamTwoScoreValue.Enabled = true;
                     }
                     else
                     {

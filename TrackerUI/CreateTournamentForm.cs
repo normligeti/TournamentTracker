@@ -147,6 +147,7 @@ namespace TrackerUI
             // create all of the team entries
             GlobalConfig.Connection.CreateTournament(tm);
 
+            // merge conflict itt volt
             tm.AlertUsersToNewRound();
 
             TournamentViewerForm frm = new TournamentViewerForm(tm);
