@@ -87,7 +87,6 @@ namespace TrackerLibrary.DataAccess
             tournaments.Add(model);
             tournaments.SaveToTournamentFile();
             TournamentLogic.UpdateTournamentResults(model);
-            //return model;
         }
 
         public List<PersonModel> GetPerson_All()
@@ -108,6 +107,18 @@ namespace TrackerLibrary.DataAccess
         public void UpdateMatchup(MatchupModel model)
         {
             model.UpdateMatchupToFile();
+        }
+
+        public void CompleteTournament(TournamentModel model)
+        {
+            List<TournamentModel> tournaments = GlobalConfig.TournamentFile
+                                                            .FullFilePath()
+                                                            .LoadFile()
+                                                            .ConvertToTournamentModels();
+
+            tournaments.Find(x => x.Id == model.Id).TournamentName += " (Tournament Finished!)";
+            tournaments.SaveToTournamentFile();
+
         }
     }
 }

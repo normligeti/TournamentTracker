@@ -24,11 +24,18 @@ namespace TrackerUI
 
             tournament = tournamentModel;
 
+            tournament.OnTournamentComplete += Tournament_OnTournamentComplete;
+
             WireUpLists();
 
             LoadFormData();
 
             LoadRounds();
+        }
+
+        private void Tournament_OnTournamentComplete(object sender, DateTime e)
+        {
+            this.Close();
         }
 
         private void LoadFormData()
@@ -126,6 +133,8 @@ namespace TrackerUI
                         teamTwoName.Text = "<bye>";
                         teamTwoScoreValue.Text = "0";
                         teamTwoScoreValue.Enabled = false;
+
+                        scoreButton.Enabled = false;
                     }
                     else
                     {
@@ -138,10 +147,18 @@ namespace TrackerUI
                 {
                     if (m.Entries[1].TeamCompeting != null)
                     {
+                        scoreButton.Enabled = true;
                         teamTwoName.Text = m.Entries[1].TeamCompeting.TeamName;
                         teamTwoScoreValue.Text = m.Entries[1].Score.ToString();
                         teamOneScoreValue.Enabled = true;
                         teamTwoScoreValue.Enabled = true;
+
+                        if (m.Winner != null)
+                        {
+                            teamOneScoreValue.Enabled = false;
+                            teamTwoScoreValue.Enabled = false;
+                            scoreButton.Enabled = false;
+                        }
                     }
                     else
                     {
