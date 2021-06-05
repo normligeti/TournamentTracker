@@ -1,5 +1,5 @@
 # TournamentTracker
--
+
 This application was a part of a C# course.
 
 It is a tournament tracker application where users can create tournaments with custom teams made of custom team members.
